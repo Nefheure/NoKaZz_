@@ -28,6 +28,7 @@ bot.on('message', message => {
         .addField("``n.aide``", "--> Vous affiche la command aide.")
         .addField("``n.youtube``", "--> Vous envoie le lien de la chaine youtube de NoKaZz_.")
         .addField("``n.fortnite``", "-->Vous montre le Pseudo Fortnite de NoKaZz_")
+        .addField("n.nokazzgang", "--> Vous donne le role GanGanG")
         .setFooter("Nokazbot par Neferr")
         .setTimestamp()
         message.channel.sendMessage(aide_embed);
