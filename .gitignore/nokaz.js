@@ -42,7 +42,7 @@ bot.on('message', message => {
         .setTitle("Voici la chaine Youtube de **NoKaZz_**")
         .setDescription("https://www.youtube.com/channel/UC1upS39RYVWaQ3kxqG-dDwA")
         .setTimestamp()
-        message.channels.sendMessage(embed);
+        message.channel.sendMessage(embed);
     }
 });
 
@@ -53,7 +53,7 @@ bot.on('message', message => {
         .setColor("#000000")
         .setDescription("Voici le Pseudo Fortnite de **NoKaZz_**  = *Lucasss_13* ")
         .setTimestamp()
-        message.channels.sendMessage(fortnite);
+        message.channel.sendMessage(fortnite);
     }
 });
 
@@ -67,7 +67,7 @@ bot.on('message', message => {
 
         membre.addRole(role).catch(console.error);
 
-        message.channels.send(`${membre} a maintenant le role ${role} !`)
+        message.channel.send(`${membre} a maintenant le role ${role} !`)
     }
 });
 
