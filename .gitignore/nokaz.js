@@ -64,7 +64,7 @@ bot.on('message', message => {
 
         let membre = message.guild.member(message.author);
 
-        let role = message.guild.roles.find('name', ':muscle:GanGanG :muscle:');
+        let role = message.guild.roles.find('name', ':GanGanG');
 
         membre.addRole(role).catch(console.error);
 
